@@ -96,6 +96,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html">
  <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./files/CV.pdf">
+ <span class="menu-text">CV</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
 </i> 
@@ -121,6 +125,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+
+
 <div class="quarto-about-solana column-body">
   <div class="about-entity">
     <div class="entity-contents">
@@ -147,23 +155,15 @@ ul.task-list li input[type="checkbox"] {
      <span class="about-link-text">Google Scholar</span>
   </a>
 </div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<div id="hero-heading">
+      <div class="about-contents"><div id="hero-heading">
 <p>Biostatistician working in genomics and clinical research, currently lead analyst for studies of immunologic response to disease and vaccines through the analysis of transcriptomics, genomics, proteomics, metabolomics, and lipidomics data. Highly skilled in developing bioinformatics analysis workflows, building predictive models, and designing simulation studies. Key role is as communicator of statistical results and connecting the findings to the biological question at hand.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>Ph.D.&nbsp;in Biostatistics</strong>, 2020 | University of Florida | Gainesville, FL</p>
-<p><strong>M.S. in Mathematics</strong> (concentration in Statistics), 2016 | University of North Florida | Jacksonville, FL</p>
-<p><strong>B.S. in Mathematic</strong>s (minor in Computer Science), 2014 | University of Central Florida | Orlando, FL</p>
-</section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p><strong>Senior Bioinformatics Analyst</strong> | The Emmes Company | Dec.&nbsp;2021 - present</p>
-<p><strong>Assistant Professor of Statistics</strong> | University of North Florida | Aug.&nbsp;2020 - May 2023</p>
-<p><strong>Statistician</strong> VA-IPA | U.S. Department of Veterans Affairs, Brain Rehabilitation Research Center | Aug.&nbsp;2018 - Aug.&nbsp;2020</p>
-<p><strong>Research Assistant</strong> | University of Florida | Aug.&nbsp;2016 - Aug.&nbsp;2020</p>
-</section>
+</div></div>
+    </div>
+    <img src="profile.png" class="about-image
+  rounded " style="width: 15em;">
+  </div>
 </div>
+
 <section id="interests" class="level2">
 <h2 data-anchor-id="interests">Interests</h2>
 <ul>
@@ -175,16 +175,32 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Past research has focused on RNA-seq data (gene expression), developing methods in the areas of graphical modeling, prediction models, and survival analysis. Typical research questions included: How can gene expression be used to improve prediction of survival in cancer patients? Do gene regulatory networks differ in high-risk vs.&nbsp;low-risk patients, and what do those differences tell us about the underlying disease?</p>
 <p>I find that simulations are an indispensable tool for modern research. Aside from allowing us to assess model performance, creating a simulation forces us to think deeply about the data generating process and the context of the problem at hand–this is a process that has often lead me to new insights.</p>
+</section>
+<section id="experience" class="level2">
+<h2 data-anchor-id="experience">Experience</h2>
+<p><strong>Senior Bioinformatics Analyst</strong> | The Emmes Company, Remote | Dec.&nbsp;2021 – <em>current</em></p>
+<p>[under construction]</p>
+<p><strong>Assistant Professor of Statistics</strong> | UNF, Jacksonville FL | Aug.&nbsp;2020 – May 2023</p>
+<p>[under construction]</p>
+<p><strong>Statistician</strong> | VA, Brain Rehabilitation Research Center | 2018 – 2020</p>
+<p>[under construction]</p>
+<p><strong>Research Assistant</strong> | UF, Gainesville FL | 2016 – 2020</p>
+<p>[under construction]</p>
+</section>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p><strong>Ph.D.&nbsp;in Biostatistics</strong> | UF, Gainesville FL | 2016 – 2020</p>
+<p>[under construction]</p>
+<p><strong>M.S. in Mathematics</strong> | UNF, Jacksonville FL | 2014 – 2016</p>
+<p>[under construction]</p>
+<p><strong>B.S. in Mathematics</strong> | UCF, Orlando FL | 2010 – 2014</p>
+<p>This was almost a computer science degree, but a single course forced a change. By my junior year I was strongly considering going to grad school for statistics–I was learning about ML and realized that, under the hood, it was all “just” math and statistics–but there was a catch. Most grad programs for statistics required advanced calc as a pre-req; I had one year to go, and there was exactly one advanced calc course offered the following Fall semester. If I wanted to apply to grad school, I’d have to take that course. But, of course, its scheduling conflicted with a required CS course that was also only offered in the Fall. If I wanted to graduate on time, I’d have to choose between finishing the CS degree or switching completely over to math with plans to apply to grad school… Let’s just say the year that followed was packed with a lot of math courses.</p>
+
 
 
 </section>
-</main></div>
-    </div>
-    <img src="profile.png" class="about-image
-  rounded " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -424,6 +440,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

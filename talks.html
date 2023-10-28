@@ -129,6 +129,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html">
  <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./files/CV.pdf">
+ <span class="menu-text">CV</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
 </i> 
@@ -203,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1668787200000" data-listing-file-modified-sort="1698478118564" data-listing-reading-time-sort="1.06">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1668787200000" data-listing-file-modified-sort="1698507352225" data-listing-reading-time-sort="1.06">
 <div class="thumbnail">
 <p><a href="./talks/2022_UMBC/index.html"> <img src="./talks/2022_UMBC/featured.png" class="thumnail-image"> </a></p>
 </div>
@@ -278,7 +282,7 @@ Jul 8, 2018
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1500782400000" data-listing-file-modified-sort="1698478402162" data-listing-reading-time-sort="0.615">
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1500782400000" data-listing-file-modified-sort="1698509845939" data-listing-reading-time-sort="0.615">
 <div class="thumbnail">
 <p><a href="./talks/2017_ISMB/index.html"> <img src="./talks/2017_ISMB/featured.png" class="thumnail-image"> </a></p>
 </div>
@@ -554,6 +558,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->

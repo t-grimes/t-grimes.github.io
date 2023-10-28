@@ -129,6 +129,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./publications.html">
  <span class="menu-text">Publications</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./files/CV.pdf">
+ <span class="menu-text">CV</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
 </i> 
@@ -154,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="High-dimensional">High-dimensional <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Law">Law <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical modeling">Statistical modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Survival Analysis">Survival Analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="High-dimensional">High-dimensional <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Law">Law <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical modeling">Statistical modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Survival Analysis">Survival Analysis <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -238,37 +242,7 @@ Tyler Grimes
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1400731200000" data-listing-file-modified-sort="1698471651551" data-listing-reading-time-sort="6.645">
-<div class="body">
-<a href="./posts/2014-05-22-a-recent-study-says/index.html">
-<h3 class="no-anchor listing-title">
-A recent study says…
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-
-</div>
-<a href="./posts/2014-05-22-a-recent-study-says/index.html">
-<div class="listing-description">
-Suppose you come across a news headline “FDA study links MMR vaccines to autism”. An excerpt from the article reads:
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2014-05-22-a-recent-study-says/index.html">
-<div class="listing-date">
-May 22, 2014
-</div>
-<div class="listing-author">
-Tyler Grimes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Law,Probability,Statistics,Survival Analysis" data-listing-date-sort="1400644800000" data-listing-file-modified-sort="1698471618631" data-listing-reading-time-sort="4.105">
+<div class="quarto-post image-right" data-index="1" data-categories="Law,Probability,Statistics,Survival Analysis" data-listing-date-sort="1400644800000" data-listing-file-modified-sort="1698471618631" data-listing-reading-time-sort="4.105">
 <div class="body">
 <a href="./posts/2014-05-21-false-conviction/index.html">
 <h3 class="no-anchor listing-title">
@@ -309,7 +283,7 @@ Tyler Grimes
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Law,Probability" data-listing-date-sort="1400472000000" data-listing-file-modified-sort="1698471554170" data-listing-reading-time-sort="4.125">
+<div class="quarto-post image-right" data-index="2" data-categories="Law,Probability" data-listing-date-sort="1400472000000" data-listing-file-modified-sort="1698512715445" data-listing-reading-time-sort="4.125">
 <div class="body">
 <a href="./posts/2014-05-19-birthday-paradox/index.html">
 <h3 class="no-anchor listing-title">
@@ -595,6 +569,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
