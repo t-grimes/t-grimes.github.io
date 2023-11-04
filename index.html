@@ -30,12 +30,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -62,42 +59,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-date"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link active" href="./index.html" aria-current="page">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -127,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html">
- <span class="menu-text">Publications</span></a>
+ <span class="menu-text">Papers</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./files/CV.pdf">
@@ -153,145 +120,103 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="High-dimensional">High-dimensional <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Law">Law <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistical modeling">Statistical modeling <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Survival Analysis">Survival Analysis <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+<div class="quarto-about-solana column-body">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tyler Grimes</h1>
+<p class="subtitle lead">Senior Bioinformatics Analyst</p>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header> <div class="about-links">
+  <a href="https://scholar.google.com/citations?user=ROPfgIEAAAAJ&amp;hl" class="about-link">
+     <span class="about-link-text">Google Scholar</span>
+  </a>
+  <a href="https://www.linkedin.com/in/tylerlgrimes/" class="about-link">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://twitter.com/TylerLGrimes" class="about-link">
+    <i class="bi bi-twitter"></i>
+     <span class="about-link-text">Twitter</span>
+  </a>
+  <a href="https://github.com/t-grimes" class="about-link">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+</div>
+      <div class="about-contents"><div id="hero-heading">
+<p>Biostatistician working in genomics and clinical research, currently lead analyst for studies of immunologic response to disease and vaccines through the analysis of transcriptomics, genomics, proteomics, metabolomics, and lipidomics data. Highly skilled in developing bioinformatics analysis workflows, building predictive models, and designing simulation studies. Key role is as communicator of statistical results and connecting the findings to the biological question at hand.</p>
+</div></div>
     </div>
+    <img src="profile.png" class="about-image
+  rounded " style="width: 15em;">
+  </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Statistical modeling,High-dimensional" data-listing-date-sort="1698465600000" data-listing-file-modified-sort="1698478885800" data-listing-reading-time-sort="0.12">
-<div class="body">
-<a href="./posts/2023-10-28-overfitting/index.html">
-<h3 class="no-anchor listing-title">
-Overfitting
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistical modeling'); return false;">
-Statistical modeling
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('High-dimensional'); return false;">
-High-dimensional
-</div>
-</div>
-<a href="./posts/2023-10-28-overfitting/index.html">
-<div class="listing-description">
-This post will be about stuff.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-10-28-overfitting/index.html">
-<div class="listing-date">
-Oct 28, 2023
-</div>
-<div class="listing-author">
-Tyler Grimes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Law,Probability,Statistics,Survival Analysis" data-listing-date-sort="1400644800000" data-listing-file-modified-sort="1698471618631" data-listing-reading-time-sort="4.105">
-<div class="body">
-<a href="./posts/2014-05-21-false-conviction/index.html">
-<h3 class="no-anchor listing-title">
-False conviction rates for death sentences
-</h3>
-<div class="listing-subtitle">
+<section id="interests" class="level2">
+<h2 data-anchor-id="interests">Interests</h2>
+<ul>
+<li><p>Statistical methods for -omics data</p></li>
+<li><p>Graphical models and differential network analysis</p></li>
+<li><p>Predictive modeling</p></li>
+<li><p>High-dimensional data analysis</p></li>
+<li><p>Statistical computing</p></li>
+</ul>
+<p>Past research has focused on RNA-seq gene expression data, developing methods in the areas of graphical modeling, prediction, and survival analysis. Typical research questions included: How can gene expression be used to improve prediction of survival in cancer patients? Do gene regulatory networks differ in high-risk vs.&nbsp;low-risk patients, and what do those differences tell us about the underlying disease?</p>
+<p>I find that simulations are an indispensable tool for modern research. Aside from allowing us to assess model performance, creating a simulation forces us to think deeply about the data generating process and the context of the problem at hand–this is a process that has often lead me to new insights.</p>
+</section>
+<section id="background" class="level1">
+<h1>Background</h1>
+<p>The following “education” and “experience” sections provide a chronological narrative of my background. Please see my CV for a concise version.</p>
+<section id="education" class="level2">
+<h2 data-anchor-id="education">Education</h2>
+<p><strong>B.S. in Mathematics</strong> | UCF, Orlando FL | 2010 – 2014</p>
+<p>My undergraduate started off in computer science. Going into college I wasn’t sure what major to pursue. I never programmed before, but CS sounded like a challenging-enough major that would lead to a good career. I didn’t know anything about CS, and I certainly didn’t expect to have a passion for it, but I was in for a surprise. My first semester Intro to CS course hooked me right away. Learning <code>C</code> was tough, but it was like playing with LEGOs and unlimited resources. I could build anything I could imagine. I found myself spending hours coding, fixing bugs, coding, on repeat. CS I and II led to even more tools to build from–algorithms and data structures–and more interesting problems to solve. Programming problems would linger in the back of my mind, unknown to me, and a solution would pop up days later. I never experienced that before. The more courses I took, the more entrenched I became. From compilers–learning how to build a programming language from scratch–to computer architecture and object-oriented programming, I was enthralled.</p>
+<p>One thing about learning programming was how complementary it was to learning math. Some of the first proofs I saw were in CS, like proving Dijkstra’s shortest path algorithm, but even thinking about functions in <code>C</code> carried over to functions in algebra. Math was always my strong suit growing up, but I only took up to pre-cal in high school and my overall understanding was sub par. While going through the CS program at UCF I took as many math courses as I could to build a better foundation. I started with algebra, trig, and pre-calc my first year and continued through calc I-III, ODE, and linear algebra after that. Calc I was the hardest–throughout the semester I always felt a week behind–but by the end it all made sense. The other calc courses were a relative breeze, albeit fueled by lots of practice. That was, until, linear algebra II. The first proof-based math course I took, it hit like a brick wall. Rather than feeling a week behind, it wasn’t until the end of the course when things began to click. Definitions were important (a revelation!). By the end, I realized almost all the theorems and proofs were essentially “by definition” … it just required connecting a few dots. Grade-wise, I did the worst in that course than any other. Learning-wise, this was my Mount Everest; and I reached the summit. I wouldn’t say it got me hooked like that Intro to CS course, but by the end I saw a new dimension to math that I didn’t know existed.</p>
+<p>By my junior year I started learning about ML. I began to realize that ML was all “just” math, statistics, and some coding. It was a fascinating combination of CS and math, though, with important real-world applications. One of the first examples I was exposed to was identifying subtypes of breast cancer using ML, with each subtype having a different prognosis and implication for treatment. This was a crossroad where I began to strongly consider going to grad school for statistics–with the idea of pursing this new-to-me field of ML–but there was a catch. Most grad programs for statistics required advanced calc as a pre-req. I had one year to go, and there was exactly one advanced calc course offered the following fall semester. If I wanted to apply to grad school, I’d have to take that course. But, as fate would have it, the schedule conflicted with a required CS course that was also only offered in the fall. If I wanted to graduate on time, I’d have to choose between finishing the CS degree or switching completely over to math with plans to apply to grad school.</p>
+<p>The year that followed was packed with math courses: abstract algebra, advance calc I-II, complex analysis, graph theory, optimization and so much more. These proved to be far more interesting that I thought they’d be (and in another life I may have pursued one of these instead of statistics), but it was a lot to consume in a single year. I was pulled in many directions, with new interests in math while still drawn towards CS/ML. In the end, the CS/ML interests won. But my experience during this final year resulted in a strong foundation in math that I could step on in addition to the CS background I built up the years prior. This CS/math background would prove to be a perfect foundation for the path I heading down.</p>
+<p><strong>M.S. in Mathematics</strong> (concentration in statistics) | UNF, Jacksonville FL | 2014 – 2016</p>
+<p>Although this was a math program, the core courses were a mix of math and stat and all the electives were stat. I went into this program knowing almost no statistics, so the summer prior to starting I decided to work through the “Head First Statistics: A Brain-Friendly Guide” book. This was useful for consolidating some of the concepts I learned in stat I and II at UCF (while I did take some stat courses, these never really “clicked” for me). My memory of the first semester of this program is dominated by one course: design of experiments. We immediately got into multivariate regression modeling using matrix notation and it took me a while to catch up. (The stat methods course I was taking the same semester wouldn’t get to this for a few weeks.) In hind-sight it was a lot like the linear algebra II course I took at UCF–it wasn’t until the end of the semester when things started to click. Like math, you can do a lot in statistics without really understanding what’s going on conceptually. But this program forced the conceptual understanding on me right out of the gate, which I am thankful for. It allowed me the entire two years to digest and internalize a lot of statistical theory.</p>
+<p>During this program was the first time I used <code>R</code>. Wow, this a strange language coming form a CS background (I mean, who starts an index for an array at 1 and not 0?). I don’t remember how I got started using <code>R</code>–the courses in the UNF program used <code>SAS</code> (which was an <em>even stranger</em> venture) and I didn’t have any <code>R</code> books–but early on I started diving into it on my own. Since I got into statistics through ML, I also learned some <code>Python</code> along the way (which made a lot more sense compared to <code>R</code>!), but by the end of the master’s program I became the most proficient in <code>R</code>.</p>
+<p>Part of my goal with pursing a master’s was to decide if I wanted to do a doctorate. I had applied to some jobs during my second year at UNF, but none of those panned out. I wasn’t too bothered though because I was leaning toward continuing into a Ph.D.&nbsp;program and pursuing a job in academia after that. The motivations that originally pushed me to grad school were continuing to grow, and what I learned at UNF felt like a stepping stone: I learned enough to know how little I knew, but I began to see how much more there was to know.</p>
+<p><strong>Ph.D.&nbsp;in Biostatistics</strong> | UF, Gainesville FL | 2016 – 2020</p>
+<p>Just two hours from UNF, I landed in Gainesville–my new home for the next four years. Biostatistics was not a field I knew existed even a year prior, but, strangely, it was the field I was to become an “expert” in. It did sound perfect though–a blend of statistics and biology with a hefty dash of CS–all of my interests merged together.</p>
+<p>I would have a lot to catch up on with biology though. Freshmen Biology 1 was the only background I had. That course was fascinating, but it ended up being a lot of memorization. I remember spending an inordinate amount of time in the library studying, trying to <em>understand</em> what was going on, but ultimately relying on rote memorization. I went in interested in biology and medicine, but that course steered me away. One of the things I liked most about CS was that, once you learned and understood some basic ideas, you could solve all sorts of problems just from those building blocks. The same was true for math and statistics–memorizing wasn’t so crucial when results could be re-derived when needed. It’s not to say memorization isn’t important in all these fields, but biology just didn’t have the same core concepts that you could build from.</p>
+<p>Funny enough, it was math and CS that drew me back to biology. The first example I saw of ML was in biology: finding cancer subtypes using clustering algorithms on gene expression data. I started seeing ML as a way of exploring biology without all the memorization, a way to utilize the building blocks of math and CS to solve interesting problems in biology. That was the vision that set me down this path.</p>
+<p>At UF my research was focused on the analysis of gene-gene association networks using gene expression measured from RNA-sequencing. Of course, my first hurdle was to understand what in the world a “gene association network” was (and “RNA-sequencing”). It made some sense when thinking about these networks from either a biological or statistical perspective. Biologically, it’s a graph–think nodes and edges, not a graph of a function–where two genes are connected by an edge if the RNA or gene product of one regulated the expression of the other. Statistically, the expression of each gene could be thought of as random variables, and two genes are connected if their random variables are dependent. This is a simplification, and the details are complicated, but the point is that the <em>idea</em> from either perspective was understandable.</p>
+<p>The challenge was combining the two perspectives: what exactly does statistical dependence observed in expressed genes tell us about the underlying gene regulation? When first reading through the literature, I always felt like I was missing something. I knew enough statistical theory to be skeptical about how much we could interpret from those models, but I lacked the understanding of biology to convince myself whether the interpretations I was reading were appropriate.</p>
+<p>It wasn’t until much later that I learned my skepticism was correct; the relationship between what we observe through RNA-sequencing and what is happening biologically is blurred due to differences in the rates of transcription, translation, and degradation of RNA and proteins, and the exact relationship depends on the organism and cell type being investigated. To make matters worse, the statistical models used to assess the dependence structure from gene expression data relied on faulty assumptions. Now, false assumptions are not <em>necessarily</em> bad–some assumptions are less important than others, and some important assumptions may be wrong but not far from the truth–but I showed through simulation studies that the assumptions in this case were important if we wanted to have a reliable biological interpretation. One paper I wrote on this proposed a statistical framework for integrating more biological knowledge into the analysis and allows for a wide variety of statistical models to be used, as that is a key factor in being able to answer biological questions. In another paper, I proposed a probabilistic model for generating gene-gene co-expression networks and simulated gene expression data from those networks, and, compared to existing models, this generator can better match the variety we see across different organisms and tissue types. This allows for more comprehensive simulation studies to be conducted for benchmarking algorithms that infer these gene-gene co-expression networks.</p>
+<p>By the end of my Ph.D.&nbsp;the idealized vision I started off with of using ML to solve complex biological questions was still alive, but I saw a lot more of the limitations. For every dozen papers that used a fancy new ML approach, maybe one actually answered a biological question. In retrospect, I was approaching a fork in the road. I was heading down a new direction with a mindset less set on the idea that ML was enough to solve important biological questions, to one that realized the importance of well designed experiments and good data. It seems obvious to say now, but with so much data available today it feels like the answer is already out there waiting to be extracted; just feed it all into the right ML algorithm, crank the wheel, and pull out the all the answers. But that’s not how I see it anymore. The real ML solution is more like a tool that, given a biological question, can identify the right experiment needed and either offer that study design and analysis plan as the answer or find data from such experiments that have already been conducted. (Sounds an awful lot like what a Biologist does!) If I wanted to make real impact, I’d need to get closer to the studies and experiments that were being done.</p>
+</section>
+<section id="experience" class="level2">
+<h2 data-anchor-id="experience">Experience</h2>
+<p><strong>Research Assistant</strong> | UF, Gainesville FL | 2016 – 2020</p>
+<p>[under construction]</p>
+<p><strong>Statistician</strong> | VA, Brain Rehabilitation Research Center | 2018 – 2020</p>
+<p>[under construction]</p>
+<p><strong>Assistant Professor of Statistics</strong> | UNF, Jacksonville FL | Aug.&nbsp;2020 – May 2023</p>
+<p>[under construction]</p>
+<p><strong>Senior Bioinformatics Analyst</strong> | The Emmes Company, Remote | Dec.&nbsp;2021 – <em>current</em></p>
+<p>[under construction]</p>
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Law'); return false;">
-Law
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Statistics'); return false;">
-Statistics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Survival Analysis'); return false;">
-Survival Analysis
-</div>
-</div>
-<a href="./posts/2014-05-21-false-conviction/index.html">
-<div class="listing-description">
-Imagine standing in a courtroom. You are the innocent defendant in a trial, being prosecuted for a…
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2014-05-21-false-conviction/index.html">
-<div class="listing-date">
-May 21, 2014
-</div>
-<div class="listing-author">
-Tyler Grimes
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Law,Probability" data-listing-date-sort="1400472000000" data-listing-file-modified-sort="1698512715445" data-listing-reading-time-sort="4.125">
-<div class="body">
-<a href="./posts/2014-05-19-birthday-paradox/index.html">
-<h3 class="no-anchor listing-title">
-Birthday Paradox and Forensic Science
-</h3>
-<div class="listing-subtitle">
 
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Law'); return false;">
-Law
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-</div>
-<a href="./posts/2014-05-19-birthday-paradox/index.html">
-<div class="listing-description">
-This post is derived from an interesting paper found in Law, Probability, and Risk. The birthday paradox, which comes up in probability theory, is used in the paper. The paradox goes something like this: Imagine you’re in a classroom with 30 students, and you are asked how…<!--more-->
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/2014-05-19-birthday-paradox/index.html">
-<div class="listing-date">
-May 19, 2014
-</div>
-<div class="listing-author">
-Tyler Grimes
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -427,13 +352,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
